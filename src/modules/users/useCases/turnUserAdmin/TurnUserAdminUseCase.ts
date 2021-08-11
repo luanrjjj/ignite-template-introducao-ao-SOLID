@@ -15,7 +15,7 @@ class TurnUserAdminUseCase {
     // Complete aqui
     const user = usersRepository.findById(user_id);
 
-    if (!user) throw new Error("Mensagem do erro");
+    if (!user) throw new Error("mensagem do erro");
 
     return usersRepository.turnAdmin(user);
   }
